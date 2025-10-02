@@ -16,9 +16,9 @@
 <body class="font-sans bg-gray-50 text-gray-800">
 
   <header class="sticky top-0 z-50 bg-white shadow-sm">
-    <div class="container mx-auto px-4 py-0 flex justify-between items-center flex-wrap">
+    <div class="container mx-auto px-4 py-0 flex justify-between items-center">  <!-- removed flex-wrap -->
       <!-- Logo - Initially hidden -->
-      <div class="flex-shrink-0 mr-4">
+      <div class="flex-shrink-0 mr-2">  <!-- reduced margin-right -->
         <a href="/">
           <img id="headerLogo" src="black.png" alt="Maids of Cy-Fair Logo"
             class="h-20 w-auto opacity-0 transition-all duration-500 ease-in-out pointer-events-none">
@@ -26,7 +26,7 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-6">
+      <nav class="hidden md:flex items-center space-x-4">  <!-- reduced horizontal gap -->
         <a href="#services" class="font-medium hover:text-primary transition">Services</a>
         <a href="#pricing" class="font-medium hover:text-primary transition">Pricing</a>
         <a href="#coverage" class="font-medium hover:text-primary transition">Coverage</a>
@@ -37,10 +37,14 @@
       </nav>
 
       <!-- Right Side Desktop -->
-      <div class="hidden md:flex items-center space-x-6">
+      <div class="hidden md:flex items-center space-x-4">  <!-- reduced horizontal gap -->
         <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
           class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
           Book
+        </button>
+        <button onclick="window.location.href='http://134.199.132.95:8080/'"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+          Login
         </button>
 
         <!-- Contact Info -->
@@ -667,6 +671,12 @@
                   Book Now
 
                 </button>
+                                <button id="book-now-btn"
+                  class="btn-interactive w-full mt-10 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold text-lg shadow-lg"
+                  onclick="window.location.href='http://134.199.132.95:8080/'">
+                  Login
+
+                </button>
               </div>
 
               <!-- ---------- Right panel ---------------- -->
@@ -963,7 +973,7 @@
     onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
   >
     <!-- Label content goes here -->
-    <input type="checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
+    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
     <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
     <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
   </label>
@@ -991,7 +1001,7 @@
     onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
   >
     <!-- Label content goes here -->
-    <input type="checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="60" />
+    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="60" />
     <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
     <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
   </label>
@@ -1005,7 +1015,7 @@
     onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
   >
     <!-- Label content goes here -->
-    <input type="checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="80" />
+    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="80" />
     <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards <small style="color:#6b7280;">> 2500 sq ft</small></span>
     <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
   </label>
@@ -1047,12 +1057,11 @@
     onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
   >
     <!-- Label content goes here -->
-    <input type="checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
+    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
     <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Clean Exterior Kitchen/Bathroom Cabinets</span>
     <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
   </label>
 </li>
-              </ul>
                   </div>
                 </div>
 
@@ -1186,8 +1195,6 @@
         });
       </script>
     </body>
-
-    </html>
 
     </html>
 
@@ -1769,6 +1776,11 @@
                             class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md"
                             onclick="window.location.href='https://maidsofcyfair.com/book/'">
                             Book Now
+                        </button>
+                                                <button
+                            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md"
+                            onclick="window.location.href='http://134.199.132.95:8080/'">
+                            LOGIN
                         </button>
 
 

@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maids of Cy‑Fair  |  About Us</title>
+    <title>Maids of Cy‑Fair | About Us</title>
 
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
-    </head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <body class="font-sans bg-gray-50 text-gray-800">
     <!-- ▸▸▸ HEADER (as provided) ◂◂◂ -->
     <header class="sticky top-0 z-50 bg-white shadow-sm">
-    <div class="container mx-auto px-4 py-0 flex justify-between items-center flex-wrap">
-        <!-- Logo - Initially hidden -->
-        <div class="flex-shrink-0 mr-4">
-            <a href="/">
-                <img id="headerLogo" src="black.png" alt="Maids of Cy-Fair Logo"
-                     class="h-20 w-auto opacity-100info@maidsofcyfair.com transition-all duration-500 ease-in-out pointer-events-none">
-            </a>
-        </div>
+        <div class="container mx-auto px-4 py-0 flex justify-between items-center flex-wrap">
+            <!-- Logo - Initially hidden -->
+            <div class="flex-shrink-0 mr-4">
+                <a href="/">
+                    <img id="headerLogo" src="black.png" alt="Maids of Cy-Fair Logo"
+                        class="h-20 w-auto opacity-100info@maidsofcyfair.com transition-all duration-500 ease-in-out pointer-events-none">
+                </a>
+            </div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center space-x-6">
-            <a href="./index.html#services" class="font-medium hover:text-primary transition">Services</a>
-            <a href="./index.html#pricing" class="font-medium hover:text-primary transition">Pricing</a>
-            <a href="./index.html#coverage" class="font-medium hover:text-primary transition">Coverage</a>
-            <a href="./index.html#testimonials" class="font-medium hover:text-primary transition">Testimonials</a>
-<a href="./aboutus.html" class="block py-2 font-medium hover:text-primary transition">About Us</a>
-            <a href="./faq.html" class="block py-2 font-medium hover:text-primary transition">FAQ</a>
-            <a href="./contact.html" class="block py-2 font-medium hover:text-primary transition">Contact</a>
-        </nav>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="./index.html#services" class="font-medium hover:text-primary transition">Services</a>
+                <a href="./index.html#pricing" class="font-medium hover:text-primary transition">Pricing</a>
+                <a href="./index.html#coverage" class="font-medium hover:text-primary transition">Coverage</a>
+                <a href="./index.html#testimonials" class="font-medium hover:text-primary transition">Testimonials</a>
+                <a href="./aboutus.html" class="block py-2 font-medium hover:text-primary transition">About Us</a>
+                <a href="./faq.html" class="block py-2 font-medium hover:text-primary transition">FAQ</a>
+                <a href="./contact.html" class="block py-2 font-medium hover:text-primary transition">Contact</a>
+            </nav>
 
-        <!-- Right Side Desktop -->
-        <div class="hidden md:flex items-center space-x-6">
-            <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
+            <!-- Right Side Desktop -->
+            <div class="hidden md:flex items-center space-x-6">
+                <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
                     class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
-                Book
-            </button>
+                    Book
+                </button>
 
-            <!-- Contact Info -->
-            <div class="text-sm text-right leading-tight">
+                <!-- Contact Info -->
+                <div class="text-sm text-right leading-tight">
                     <div class="font-semibold">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@maidsofcyfair.com" 
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@maidsofcyfair.com"
                             class="font-semibold text-blue-600 hover:underline">
                             📧 info@maidsofcyfair.com
                         </a>
@@ -54,89 +55,146 @@
                     <div class="text-gray-600">🕒 Mon–Fri: 8am – 6pm</div>
                     <div class="text-gray-800 font-semibold">📞 (832) 727-0277</div>
                 </div>
-        </div>
-
-        <!-- Mobile Menu Toggle -->
-        <div class="md:hidden ml-auto">
-            <button id="menuToggle" class="text-gray-800 focus:outline-none" aria-label="Toggle menu">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-    </div>
-
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
-        <a href="#services" class="block py-2 font-medium hover:text-primary transition">Services</a>
-        <a href="#pricing" class="block py-2 font-medium hover:text-primary transition">Pricing</a>
-        <a href="#coverage" class="block py-2 font-medium hover:text-primary transition">Coverage</a>
-        <a href="#testimonials" class="block py-2 font-medium hover:text-primary transition">Testimonials</a>
-        <a href="./aboutus.html" class="block py-2 font-medium hover:text-primary transition">About Us</a>
-        <a href="./faq.html" class="block py-2 font-medium hover:text-primary transition">FAQ</a>
-        <a href="./contact.html" class="block py-2 font-medium hover:text-primary transition">Contact</a>
-
-        <div class="mt-4">
-            <div class="flex items-center mb-2">
-                <i class="fas fa-phone text-primary mr-2"></i>
-                <span class="font-semibold">(832) 727‑0277</span>
             </div>
-            <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
-                    class="bg-red-600 hover:bg-red-700 text-white w-full py-2 rounded-lg font-medium transition shadow-md">
-                Book
-            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden ml-auto">
+                <button id="menuToggle" class="text-gray-800 focus:outline-none" aria-label="Toggle menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </div>
-</header>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+            <a href="#services" class="block py-2 font-medium hover:text-primary transition">Services</a>
+            <a href="#pricing" class="block py-2 font-medium hover:text-primary transition">Pricing</a>
+            <a href="#coverage" class="block py-2 font-medium hover:text-primary transition">Coverage</a>
+            <a href="#testimonials" class="block py-2 font-medium hover:text-primary transition">Testimonials</a>
+            <a href="./aboutus.html" class="block py-2 font-medium hover:text-primary transition">About Us</a>
+            <a href="./faq.html" class="block py-2 font-medium hover:text-primary transition">FAQ</a>
+            <a href="./contact.html" class="block py-2 font-medium hover:text-primary transition">Contact</a>
+
+            <div class="mt-4">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-phone text-primary mr-2"></i>
+                    <span class="font-semibold">(832) 727‑0277</span>
+                </div>
+                <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
+                    class="bg-red-600 hover:bg-red-700 text-white w-full py-2 rounded-lg font-medium transition shadow-md">
+                    Book
+                </button>
+            </div>
+        </div>
+    </header>
 
 
-        <!-- Hero / Banner -->
-        <section class="relative h-64 md:h-80"
-         style="
+    <!-- Hero / Banner -->
+    <section class="relative h-64 md:h-80" style="
            background-image: url('aboutusimage.png');
            background-size: cover;
            background-position: center 35%;
          ">
-            <div class="absolute inset-0 bg-black/30"></div>
-            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
-                    Book. Clean. Relax.
-                </h1>
-                <p class="text-white text-lg max-w-xl">
-                    Professional, reliable cleaning services for Cypress‑Fairbanks and surrounding areas.
-                </p>
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                Book. Clean. Relax.
+            </h1>
+            <p class="text-white text-lg max-w-xl">
+                Professional, reliable cleaning services for Cypress‑Fairbanks and surrounding areas.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Us Text -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold mb-6 text-center">About Us</h2>
+
+            <p class="mb-4">
+                Welcome! I’m <strong>Landis</strong> — a mother, wife, and hardworking professional who understands
+                the challenges of balancing a busy life. In today’s fast‑paced world, I often find myself cleaning
+                during my spare time, knowing those hours could be spent more productively elsewhere. I also
+                recognize the value of hard‑earned money and believe no one should be taken advantage of when it
+                comes to essential services.
+            </p>
+
+            <p class="mb-4">
+                That’s why I founded <strong>Maids of Cy‑Fair</strong>, built on integrity, fair pricing, and a
+                commitment to excellence. I prioritize strong relationships with my customers, offering dedicated
+                service, open communication, and honest business practices. My goal is to establish a trustworthy
+                presence in the Cypress‑Fairbanks community, working alongside clients to meet their cleaning needs.
+            </p>
+
+            <p class="mb-4">
+                Time is precious, and my mission is to help lighten your workload with affordable, high‑quality
+                cleaning services — giving you more time to spend with loved ones or simply enjoy life. I look
+                forward to connecting with you soon!
+            </p>
+
+            <p class="italic mb-8">Blessings,<br />Landis</p>
+
+            <!-- Business Information Box for SES Compliance -->
+            <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-indigo-600">
+                <h3 class="text-xl font-bold text-indigo-700 mb-4"><i class="fas fa-building mr-2"></i>Business
+                    Information</h3>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Company Details</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li><strong>Business Name:</strong> Maids of Cy-Fair</li>
+                            <li><strong>Location:</strong> Cypress, Texas</li>
+                            <li><strong>Mailing Address:</strong><br>8102 Fry Road, Ste A #1021<br>Cypress, TX 77433
+                            </li>
+                            <li><strong>Service Areas:</strong> 77433, 77429, 77095</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Our Commitment</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>✓ <strong>Fully Insured</strong> for your peace of mind</li>
+                            <li>✓ <strong>Background Checked</strong> cleaning professionals</li>
+                            <li>✓ <strong>Eco-Friendly</strong> cleaning products</li>
+                            <li>✓ <strong>Satisfaction Guaranteed</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-gray-200">
+                    <h4 class="font-semibold text-gray-800 mb-2"><i
+                            class="fas fa-envelope-open-text text-indigo-600 mr-2"></i>Email Communication</h4>
+                    <p class="text-gray-600 text-sm mb-3">
+                        When you book with us or contact us, we may send you important service-related emails including:
+                    </p>
+                    <ul class="text-gray-600 text-sm space-y-1 ml-4">
+                        <li>• Booking confirmations and appointment reminders</li>
+                        <li>• Service updates and scheduling notifications</li>
+                        <li>• Invoices and payment receipts</li>
+                        <li>• Responses to your inquiries</li>
+                    </ul>
+                    <p class="text-gray-600 text-sm mt-3">
+                        We respect your inbox. You can unsubscribe from promotional emails at any time.
+                        <a href="./privacy-policy.html" class="text-blue-600 hover:underline">View our Privacy
+                            Policy</a>
+                    </p>
+                </div>
+
+                <div class="mt-6 flex flex-wrap gap-4">
+                    <a href="./contact.html"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg font-medium transition">
+                        <i class="fas fa-phone mr-2"></i>Contact Us
+                    </a>
+                    <a href="https://foodsensescale.tech/guest-booking"
+                        class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-medium transition">
+                        <i class="fas fa-calendar-check mr-2"></i>Book Now
+                    </a>
+                </div>
             </div>
-        </section>
-
-        <!-- About Us Text -->
-        <section id="about" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-3xl font-bold mb-6 text-center">About Us</h2>
-
-                <p class="mb-4">
-                    Welcome! I’m <strong>Landis</strong> — a mother, wife, and hardworking professional who understands
-                    the challenges of balancing a busy life. In today’s fast‑paced world, I often find myself cleaning
-                    during my spare time, knowing those hours could be spent more productively elsewhere. I also
-                    recognize the value of hard‑earned money and believe no one should be taken advantage of when it
-                    comes to essential services.
-                </p>
-
-                <p class="mb-4">
-                    That’s why I founded <strong>Maids of Cy‑Fair</strong>, built on integrity, fair pricing, and a
-                    commitment to excellence. I prioritize strong relationships with my customers, offering dedicated
-                    service, open communication, and honest business practices. My goal is to establish a trustworthy
-                    presence in the Cypress‑Fairbanks community, working alongside clients to meet their cleaning needs.
-                </p>
-
-                <p class="mb-4">
-                    Time is precious, and my mission is to help lighten your workload with affordable, high‑quality
-                    cleaning services — giving you more time to spend with loved ones or simply enjoy life. I look
-                    forward to connecting with you soon!
-                </p>
-
-                <p class="italic">Blessings,<br />Landis</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
 
     <section id="difference-section" class="bg-white" data-aos="fade-up" style="
@@ -346,7 +404,8 @@
                         <br>Eco-friendly products · Satisfaction guaranteed
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-white"> <i class="fab fa-facebook-f">    Facebook</i></a>
+                        <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/"
+                            class="text-gray-300 hover:text-white"> <i class="fab fa-facebook-f"> Facebook</i></a>
                         <!-- <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-[#d4af37]">Facebook <i ></i></a> -->
                         <!-- <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-twitter"></i></a> -->
@@ -359,8 +418,14 @@
                         <li><a href="/index.html" class="text-gray-300 hover:text-white">Home</a></li>
                         <li><a href="./index.html#services" class="text-gray-300 hover:text-white">Services</a></li>
                         <li><a href="./index.html#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
-                        <li><a href="./index.html#coverage" class="text-gray-300 hover:text-white">Coverage Area</a></li>
+                        <li><a href="./index.html#coverage" class="text-gray-300 hover:text-white">Coverage Area</a>
+                        </li>
                         <li><a href="./index.html#pricing" class="text-gray-300 hover:text-white">Book Online</a></li>
+                        <li><a href="./privacy-policy.html" class="text-gray-300 hover:text-white">Privacy Policy</a>
+                        </li>
+                        <li><a href="./refund-policy.html" class="text-gray-300 hover:text-white">Refund Policy</a></li>
+                        <li><a href="./terms-and-conditions.html" class="text-gray-300 hover:text-white">Terms &
+                                Conditions</a></li>
                     </ul>
                 </div>
 
@@ -371,8 +436,10 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt text-white mt-1 mr-3"></i>
-                            <span class="text-gray-300">We proudly serve Cypress, TX and the surrounding communities.  We operate as a service-area business and do not maintain a physical storefront or customer facing office.
-Service areas: 77433, 77429, 77095.</span>
+                            <span class="text-gray-300">We proudly serve Cypress, TX and the surrounding communities. We
+                                operate as a service-area business and do not maintain a physical storefront or customer
+                                facing office.
+                                Service areas: 77433, 77429, 77095.</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone text-white mr-3"></i>
@@ -419,4 +486,5 @@ Service areas: 77433, 77429, 77095.</span>
     </script> -->
 
 </body>
+
 </html>

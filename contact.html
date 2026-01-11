@@ -1,397 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maids of Cy‑Fair  |  Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maids of Cy‑Fair | Contact Us</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome for Icons -->
-  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
 
 <body class="font-sans bg-gray-50 text-gray-800">
-    <!-- ▸▸▸ HEADER (as provided) ◂◂◂ -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
-        <div class="container mx-auto px-4 py-0 flex justify-between items-center flex-wrap">
-            <!-- Logo - Initially hidden -->
-            <div class="flex-shrink-0 mr-4">
-                <a href="/">
-                    <img id="headerLogo" src="black.png" alt="Maids of Cy-Fair Logo"
-                         class="h-20 w-auto opacity-100 transition-all duration-500 ease-in-out pointer-events-none">
+
+    <body class="font-sans bg-gray-50 text-gray-800">
+        <!-- ▸▸▸ HEADER (as provided) ◂◂◂ -->
+        <header class="sticky top-0 z-50 bg-white shadow-sm">
+            <div class="container mx-auto px-4 py-0 flex justify-between items-center flex-wrap">
+                <!-- Logo - Initially hidden -->
+                <div class="flex-shrink-0 mr-4">
+                    <a href="/">
+                        <img id="headerLogo" src="black.png" alt="Maids of Cy-Fair Logo"
+                            class="h-20 w-auto opacity-100 transition-all duration-500 ease-in-out pointer-events-none">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="./index.html#services" class="font-medium hover:text-primary transition">Services</a>
+                    <a href="./index.html#pricing" class="font-medium hover:text-primary transition">Pricing</a>
+                    <a href="./index.html#coverage" class="font-medium hover:text-primary transition">Coverage</a>
+                    <a href="./index.html#testimonials"
+                        class="font-medium hover:text-primary transition">Testimonials</a>
+                    <a href="./aboutus.html" class="font-medium hover:text-primary transition">About Us</a>
+                    <a href="./faq.html" class="font-medium hover:text-primary transition">FAQ</a>
+                    <a href="./contact.html" class="font-medium hover:text-primary transition">Contact</a>
+                </nav>
+
+                <!-- Right Side Desktop -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
+                        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
+                        Book
+                    </button>
+
+                    <!-- Contact Info -->
+                    <div class="text-sm text-right leading-tight">
+                        <div class="font-semibold">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@maidsofcyfair.com"
+                                class="font-semibold text-blue-600 hover:underline">
+                                📧 info@maidsofcyfair.com
+                            </a>
+                        </div>
+                        <div class="text-gray-600">🕒 Mon–Fri: 8am – 6pm</div>
+                        <div class="text-gray-800 font-semibold">📞 (832) 727-0277</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="md:hidden ml-auto">
+                    <button id="menuToggle" class="text-gray-800 focus:outline-none" aria-label="Toggle menu">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+                <a href="#services" class="block py-2 font-medium hover:text-primary transition">Services</a>
+                <a href="#pricing" class="block py-2 font-medium hover:text-primary transition">Pricing</a>
+                <a href="#coverage" class="block py-2 font-medium hover:text-primary transition">Coverage</a>
+                <a href="#testimonials" class="block py-2 font-medium hover:text-primary transition">Testimonials</a>
+                <a href="./aboutus.html" class="block py-2 font-medium hover:text-primary transition">About Us</a>
+                <a href="./faq.html" class="block py-2 font-medium hover:text-primary transition">FAQ</a>
+                <a href="./contact.html" class="block py-2 font-medium hover:text-primary transition">Contact</a>
+
+                <div class="mt-4">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-phone text-primary mr-2"></i>
+                        <span class="font-semibold">(832) 727‑0277</span>
+                    </div>
+                    <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
+                        class="bg-red-600 hover:bg-red-700 text-white w-full py-2 rounded-lg font-medium transition shadow-md">
+                        Book
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- 🔹 Main Content -->
+
+
+        <!-- Contact Info + Form -->
+        <section class="py-16 px-4 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12" style="
+    padding-bottom: 0px;
+">
+            <!-- Left Column - Contact Info -->
+            <div>
+                <h2 class="text-2xl font-bold mb-6">📞 Contact Details</h2>
+
+                <!-- Business Name -->
+                <div class="mb-6 p-4 bg-white rounded-lg shadow-sm border-l-4 border-indigo-600">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">Maids of Cy-Fair</h3>
+                    <p class="text-gray-600">Professional Residential Cleaning Services</p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-4 mb-8">
+                    <p class="text-lg flex items-center">
+                        <i class="fas fa-phone text-indigo-600 mr-3 w-5"></i>
+                        <span><strong>Phone:</strong> <a href="tel:8327270277"
+                                class="text-blue-600 hover:underline">(832) 727-0277</a></span>
+                    </p>
+                    <p class="text-lg flex items-center">
+                        <i class="fas fa-envelope text-indigo-600 mr-3 w-5"></i>
+                        <span><strong>Email:</strong> <a href="mailto:info@maidsofcyfair.com"
+                                class="text-blue-600 hover:underline">info@maidsofcyfair.com</a></span>
+                    </p>
+                    <p class="text-lg flex items-start">
+                        <i class="fas fa-map-marker-alt text-indigo-600 mr-3 w-5 mt-1"></i>
+                        <span><strong>Address:</strong><br>8102 Fry Road, Ste A #1021<br>Cypress, TX 77433</span>
+                    </p>
+                    <p class="text-lg flex items-center">
+                        <i class="fas fa-clock text-indigo-600 mr-3 w-5"></i>
+                        <span><strong>Business Hours:</strong> Mon–Fri: 8am – 6pm</span>
+                    </p>
+                    <p class="text-lg flex items-center">
+                        <i class="fas fa-globe text-indigo-600 mr-3 w-5"></i>
+                        <span><strong>Service Area:</strong> Cypress, TX (77433, 77429, 77095)</span>
+                    </p>
+                </div>
+
+                <!-- Email Communication Policy -->
+                <div class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <h4 class="font-semibold text-gray-800 mb-2"><i class="fas fa-shield-alt text-blue-600 mr-2"></i>Our
+                        Email Communication Policy</h4>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>✓ We only send emails you've requested or consented to receive</li>
+                        <li>✓ Booking confirmations, reminders, and service updates</li>
+                        <li>✓ Easy opt-out available in every email</li>
+                        <li>✓ Your information is never sold or shared</li>
+                    </ul>
+                    <p class="mt-3 text-sm">
+                        <a href="./privacy-policy.html" class="text-blue-600 hover:underline font-medium">
+                            <i class="fas fa-external-link-alt mr-1"></i>Read our Privacy Policy
+                        </a>
+                    </p>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-4">📅 Book an appointment in less than 1 minute</h3>
+                <p class="mb-6">Book your a' la carte appointment now!</p>
+                <a href="https://foodsensescale.tech/guest-booking"
+                    class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium shadow-lg">
+                    Book Now
                 </a>
             </div>
 
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center space-x-6">
-                <a href="./index.html#services" class="font-medium hover:text-primary transition">Services</a>
-                <a href="./index.html#pricing" class="font-medium hover:text-primary transition">Pricing</a>
-                <a href="./index.html#coverage" class="font-medium hover:text-primary transition">Coverage</a>
-                <a href="./index.html#testimonials" class="font-medium hover:text-primary transition">Testimonials</a>
-                <a href="./aboutus.html" class="font-medium hover:text-primary transition">About Us</a>
-                <a href="./faq.html" class="font-medium hover:text-primary transition">FAQ</a>
-                <a href="./contact.html" class="font-medium hover:text-primary transition">Contact</a>
-            </nav>
+            <!-- Right Column - Contact Form -->
+            <div>
 
-            <!-- Right Side Desktop -->
-            <div class="hidden md:flex items-center space-x-6">
-                <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
-                        class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
-                    Book
-                </button>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfDuVpywbYjHva-RbM_qHDjocsCSaO5T0ht8QbKH0W5csL0Yg/viewform?embedded=true"
+                    width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">
+                    Loading…
+                </iframe>
 
-                <!-- Contact Info -->
-                <div class="text-sm text-right leading-tight">
-                    <div class="font-semibold">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@maidsofcyfair.com" 
-                            class="font-semibold text-blue-600 hover:underline">
-                            📧 info@maidsofcyfair.com
-                        </a>
-                    </div>
-                    <div class="text-gray-600">🕒 Mon–Fri: 8am – 6pm</div>
-                    <div class="text-gray-800 font-semibold">📞 (832) 727-0277</div>
-                </div>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <div class="md:hidden ml-auto">
-                <button id="menuToggle" class="text-gray-800 focus:outline-none" aria-label="Toggle menu">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
-            <a href="#services" class="block py-2 font-medium hover:text-primary transition">Services</a>
-            <a href="#pricing" class="block py-2 font-medium hover:text-primary transition">Pricing</a>
-            <a href="#coverage" class="block py-2 font-medium hover:text-primary transition">Coverage</a>
-            <a href="#testimonials" class="block py-2 font-medium hover:text-primary transition">Testimonials</a>
-            <a href="./aboutus.html" class="block py-2 font-medium hover:text-primary transition">About Us</a>
-            <a href="./faq.html" class="block py-2 font-medium hover:text-primary transition">FAQ</a>
-            <a href="./contact.html" class="block py-2 font-medium hover:text-primary transition">Contact</a>
-
-            <div class="mt-4">
-                <div class="flex items-center mb-2">
-                    <i class="fas fa-phone text-primary mr-2"></i>
-                    <span class="font-semibold">(832) 727‑0277</span>
-                </div>
-                <button onclick="window.location.href='https://maidsofcyfair.com/book/'"
-                        class="bg-red-600 hover:bg-red-700 text-white w-full py-2 rounded-lg font-medium transition shadow-md">
-                    Book
-                </button>
-            </div>
-        </div>
-    </header>
-
-  <!-- 🔹 Main Content -->
-
-
-    <!-- Contact Info + Form -->
-    <section class="py-16 px-4 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12" style="
-    padding-bottom: 0px;
-">
-      <!-- Left Column - Contact Info -->
-      <div>
-        <h2 class="text-2xl font-bold mb-6">📞 Contact Details</h2>
-        <p class="mb-4 text-lg"><strong>Phone:</strong> <a href="tel:8327270277" class="text-blue-600 hover:underline">(832) 727-0277</a></p>
-        <p class="mb-8 text-lg"><strong>Email:</strong> <a href="mailto:info@maidsofcyfair.com" class="text-blue-600 hover:underline">info@maidsofcyfair.com</a></p>
-
-        <h3 class="text-xl font-semibold mb-4">📅 Book an appointment in less than 1 minute</h3>
-        <p class="mb-6">Book your a’ la carte appointment now!</p>
-        <a href="https://maidsofcyfair.com/book/"  class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium shadow-lg">
-          Book Now
-        </a>
-      </div>
-
-      <!-- Right Column - Contact Form -->
-      <div>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfDuVpywbYjHva-RbM_qHDjocsCSaO5T0ht8QbKH0W5csL0Yg/viewform?embedded=true" 
-        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">
-  Loading…
-</iframe>
-
-      </div>
-    </section>
-
-    <!-- Why Choose Us -->
-  
-    <section id="difference-section" class=" bg-white" data-aos="fade-up" style="
-    padding-bottom: 0px;
-    padding-top: 0px;
-">
-        <!-- why chooose us method -->
-        <section class="mt-16 py-16 bg-[#F1F5F9]" data-aos="fade-up">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-animate="fadeInUp">Why Choose Us Over
-                    Others?</h2>
-                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-                    Discover what makes our cleaning service stand out from the competition.
-                </p>
-
-                <!-- Auto-scrolling Feature Boxes Container -->
-                <div class="relative overflow-hidden">
-                    <div class="scrolling-features flex">
-                        <!-- Original feature boxes -->
-                        <div class="feature-set flex">
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
-                                <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
-                                    included.
-                                </p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
-                                <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay updated
-                                    every
-                                    step of the way.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-soap text-yellow-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
-                                <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
-                                        fresh
-                                        mop
-                                        heads</strong> per home — no sharing between rooms.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
-                                <p class="text-gray-600">We are fully insured & our team is background-checked — your
-                                    home
-                                    is in
-                                    safe hands.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-lock text-amber-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
-                                <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
-                                    Just
-                                    clean.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Duplicate for seamless looping -->
-                        <div class="feature-set flex" aria-hidden="true">
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
-                                <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
-                                    included.
-                                </p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
-                                <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay updated
-                                    every
-                                    step of the way.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-soap text-yellow-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
-                                <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
-                                        fresh
-                                        mop
-                                        heads</strong> per home — no sharing between rooms.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
-                                <p class="text-gray-600">We are fully insured & our team is background-checked — your
-                                    home
-                                    is in
-                                    safe hands.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-lock text-amber-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
-                                <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
-                                    Just
-                                    clean.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bonus Highlight -->
-                <div class="mt-12 text-center bg-white max-w-4xl mx-auto p-6 rounded-xl shadow-md">
-                    <p class="text-xl font-semibold mb-2">
-                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
-                        <span class="italic">"Wait — other companies use the <strong>same mop</strong> for the bathroom
-                            and
-                            kitchen?!"</span>
-                    </p>
-                    <p class="text-gray-700 mt-3">Yeah... we don't.</p>
-                    <p class="text-gray-600 mt-2">We believe in <strong>clean tools for a clean home</strong>. That's
-                        why
-                        every home gets:</p>
-                    <ul class="list-disc list-inside mt-4 text-gray-700 text-left max-w-md mx-auto">
-                        <li>✅ 24 color coded microfiber towels</li>
-                        <li>✅ 2 fresh mop heads separate for bathroom & living areas</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
-        <style>
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
+        <!-- Why Choose Us -->
 
-                100% {
-                    transform: translateX(-50%);
-                }
-            }
-
-            .scrolling-features {
-                display: flex;
-                width: max-content;
-                animation: scroll 20s linear infinite;
-            }
-
-            .scrolling-features:hover {
-                animation-play-state: paused;
-            }
-
-            .feature-set {
-                display: flex;
-            }
-
-            .feature-box {
-                flex-shrink: 0;
-                width: 16rem;
-                /* w-64 */
-                margin: 0 0.75rem;
-                /* mx-3 */
-            }
-        </style>
-
-
-
-
-    </section>
-  </main>
-
-
-    <!-- ▸▸▸ FOOTER (as provided) ◂◂◂ -->
-    <!-- Footer -->
-    <footer id="footer" class="bg-[#000000] text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <a href="/" title="Go to Home">
-                            <img src="white.png" alt="Maids of Cy-Fair Logo" class="h-28">
-                        </a>
-                    </div>
-
-                    <p class="text-gray-300 mb-4">
-                        Fully insured cleaners · Background checked · English speaking ·
-                        <br>Eco-friendly products · Satisfaction guaranteed
+        <section id="difference-section" class=" bg-white" data-aos="fade-up" style="
+    padding-bottom: 0px;
+    padding-top: 0px;
+">
+            <!-- why chooose us method -->
+            <section class="mt-16 py-16 bg-[#F1F5F9]" data-aos="fade-up">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-animate="fadeInUp">Why Choose Us
+                        Over
+                        Others?</h2>
+                    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                        Discover what makes our cleaning service stand out from the competition.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-white"> <i class="fab fa-facebook-f">    Facebook</i></a>
-                        <!-- <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-[#d4af37]">Facebook <i ></i></a> -->
-                        <!-- <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-twitter"></i></a> -->
+
+                    <!-- Auto-scrolling Feature Boxes Container -->
+                    <div class="relative overflow-hidden">
+                        <div class="scrolling-features flex">
+                            <!-- Original feature boxes -->
+                            <div class="feature-set flex">
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
+                                    <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
+                                        included.
+                                    </p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
+                                    <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay
+                                        updated
+                                        every
+                                        step of the way.</p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-soap text-yellow-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
+                                    <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
+                                            fresh
+                                            mop
+                                            heads</strong> per home — no sharing between rooms.</p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
+                                    <p class="text-gray-600">We are fully insured & our team is background-checked —
+                                        your
+                                        home
+                                        is in
+                                        safe hands.</p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-lock text-amber-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
+                                    <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
+                                        Just
+                                        clean.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Duplicate for seamless looping -->
+                            <div class="feature-set flex" aria-hidden="true">
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
+                                    <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
+                                        included.
+                                    </p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
+                                    <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay
+                                        updated
+                                        every
+                                        step of the way.</p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-soap text-yellow-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
+                                    <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
+                                            fresh
+                                            mop
+                                            heads</strong> per home — no sharing between rooms.</p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
+                                    <p class="text-gray-600">We are fully insured & our team is background-checked —
+                                        your
+                                        home
+                                        is in
+                                        safe hands.</p>
+                                </div>
+
+                                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                                    <div
+                                        class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fas fa-lock text-amber-500 text-2xl"></i>
+                                    </div>
+                                    <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
+                                    <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
+                                        Just
+                                        clean.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bonus Highlight -->
+                    <div class="mt-12 text-center bg-white max-w-4xl mx-auto p-6 rounded-xl shadow-md">
+                        <p class="text-xl font-semibold mb-2">
+                            <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                            <span class="italic">"Wait — other companies use the <strong>same mop</strong> for the
+                                bathroom
+                                and
+                                kitchen?!"</span>
+                        </p>
+                        <p class="text-gray-700 mt-3">Yeah... we don't.</p>
+                        <p class="text-gray-600 mt-2">We believe in <strong>clean tools for a clean home</strong>.
+                            That's
+                            why
+                            every home gets:</p>
+                        <ul class="list-disc list-inside mt-4 text-gray-700 text-left max-w-md mx-auto">
+                            <li>✅ 24 color coded microfiber towels</li>
+                            <li>✅ 2 fresh mop heads separate for bathroom & living areas</li>
+                        </ul>
                     </div>
                 </div>
+            </section>
 
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/index.html" class="text-gray-300 hover:text-white">Home</a></li>
-                        <li><a href="./index.html#services" class="text-gray-300 hover:text-white">Services</a></li>
-                        <li><a href="./index.html#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
-                        <li><a href="./index.html#coverage" class="text-gray-300 hover:text-white">Coverage Area</a></li>
-                        <li><a href="./index.html#pricing" class="text-gray-300 hover:text-white">Book Online</a></li>
-                    </ul>
+            <style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .scrolling-features {
+                    display: flex;
+                    width: max-content;
+                    animation: scroll 20s linear infinite;
+                }
+
+                .scrolling-features:hover {
+                    animation-play-state: paused;
+                }
+
+                .feature-set {
+                    display: flex;
+                }
+
+                .feature-box {
+                    flex-shrink: 0;
+                    width: 16rem;
+                    /* w-64 */
+                    margin: 0 0.75rem;
+                    /* mx-3 */
+                }
+            </style>
+
+
+
+
+        </section>
+        </main>
+
+
+        <!-- ▸▸▸ FOOTER (as provided) ◂◂◂ -->
+        <!-- Footer -->
+        <footer id="footer" class="bg-[#000000] text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <a href="/" title="Go to Home">
+                                <img src="white.png" alt="Maids of Cy-Fair Logo" class="h-28">
+                            </a>
+                        </div>
+
+                        <p class="text-gray-300 mb-4">
+                            Fully insured cleaners · Background checked · English speaking ·
+                            <br>Eco-friendly products · Satisfaction guaranteed
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/"
+                                class="text-gray-300 hover:text-white"> <i class="fab fa-facebook-f"> Facebook</i></a>
+                            <!-- <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-[#d4af37]">Facebook <i ></i></a> -->
+                            <!-- <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                            <li><a href="./index.html#services" class="text-gray-300 hover:text-white">Services</a></li>
+                            <li><a href="./index.html#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
+                            <li><a href="./index.html#coverage" class="text-gray-300 hover:text-white">Coverage Area</a>
+                            </li>
+                            <li><a href="./index.html#pricing" class="text-gray-300 hover:text-white">Book Online</a>
+                            </li>
+                            <li><a href="./privacy-policy.html" class="text-gray-300 hover:text-white">Privacy
+                                    Policy</a></li>
+                            <li><a href="./refund-policy.html" class="text-gray-300 hover:text-white">Refund Policy</a>
+                            </li>
+                            <li><a href="./terms-and-conditions.html" class="text-gray-300 hover:text-white">Terms &
+                                    Conditions</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-white mt-1 mr-3"></i>
+                                <span class="text-gray-300">We proudly serve Cypress, TX and the surrounding
+                                    communities. We operate as a service-area business and do not maintain a physical
+                                    storefront or customer facing office.
+                                    Service areas: 77433, 77429, 77095</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-white mr-3"></i>
+                                <span class="text-gray-300">(832) 727-0277</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-white mr-3"></i>
+                                <span class="text-gray-300">info@maidsofcyfair.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-clock text-white mr-3"></i>
+                                <span class="text-gray-300">Mon-Fri: 8am - 6pm</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-
-
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-white mt-1 mr-3"></i>
-                            <span class="text-gray-300">We proudly serve Cypress, TX and the surrounding communities.  We operate as a service-area business and do not maintain a physical storefront or customer facing office.
-Service areas: 77433, 77429, 77095</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone text-white mr-3"></i>
-                            <span class="text-gray-300">(832) 727-0277</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope text-white mr-3"></i>
-                            <span class="text-gray-300">info@maidsofcyfair.com</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-clock text-white mr-3"></i>
-                            <span class="text-gray-300">Mon-Fri: 8am - 6pm</span>
-                        </li>
-                    </ul>
+                <div class="border-t border-gray-700 mt-8 pt-6">
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-400 text-sm">
+                        <img src="logo.png" alt="Bottom Logo" class="h-10">
+                        <p>©2025 MaidsofCyfair. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-6">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-400 text-sm">
-                    <img src="logo.png" alt="Bottom Logo" class="h-10">
-                    <p>©2025 MaidsofCyfair. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
+        </footer>
 
-    <!-- ▸▸▸ SCRIPTS ◂◂◂ -->
 
-    </script>
+        <!-- ▸▸▸ SCRIPTS ◂◂◂ -->
 
-  <!-- 🔹 Scripts -->
-  <!-- <script>
+        </script>
+
+        <!-- 🔹 Scripts -->
+        <!-- <script>
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -413,5 +493,6 @@ Service areas: 77433, 77429, 77095</span>
   </script> -->
 
 
-</body>
+    </body>
+
 </html>

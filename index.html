@@ -16,9 +16,9 @@
 <body class="font-sans bg-gray-50 text-gray-800">
 
   <header class="sticky top-0 z-50 bg-white shadow-sm">
-    <div class="container mx-auto px-4 py-0 flex justify-between items-center">  <!-- removed flex-wrap -->
+    <div class="container mx-auto px-4 py-0 flex justify-between items-center"> <!-- removed flex-wrap -->
       <!-- Logo - Initially hidden -->
-      <div class="flex-shrink-0 mr-2">  <!-- reduced margin-right -->
+      <div class="flex-shrink-0 mr-2"> <!-- reduced margin-right -->
         <a href="/">
           <img id="headerLogo" src="black.png" alt="Maids of Cy-Fair Logo"
             class="h-20 w-auto opacity-0 transition-all duration-500 ease-in-out pointer-events-none">
@@ -26,7 +26,7 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center space-x-4">  <!-- reduced horizontal gap -->
+      <nav class="hidden md:flex items-center space-x-4"> <!-- reduced horizontal gap -->
         <a href="#services" class="font-medium hover:text-primary transition">Services</a>
         <a href="#pricing" class="font-medium hover:text-primary transition">Pricing</a>
         <a href="#coverage" class="font-medium hover:text-primary transition">Coverage</a>
@@ -37,20 +37,20 @@
       </nav>
 
       <!-- Right Side Desktop -->
-      <div class="hidden md:flex items-center space-x-4">  <!-- reduced horizontal gap -->
+      <div class="hidden md:flex items-center space-x-4"> <!-- reduced horizontal gap -->
         <button onclick="window.location.href='https://foodsensescale.tech/guest-booking'"
           class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
           Book
         </button>
-        <button onclick="window.location.href='https://foodsensescale.tech/login'"
+        <!-- <button onclick="window.location.href='https://foodsensescale.tech/login'"
           class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition shadow-md">
-          Customer portal 
-        </button>
+          Customer portal
+        </button> -->
 
         <!-- Contact Info -->
         <div class="text-sm text-right leading-tight">
           <div class="font-semibold">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@maidsofcyfair.com" 
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@maidsofcyfair.com"
               class="font-semibold text-blue-600 hover:underline">
               📧 info@maidsofcyfair.com
             </a>
@@ -125,16 +125,13 @@
         class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg mb-6 inline-block transform hover:scale-105">
         Get Your Free Quote Today
       </a>
-<!-- Responsive Award - Living Magazine Readers' Choice -->
-<!-- Responsive Award - Living Magazine Readers' Choice (smaller) -->
-<div class="flex justify-center w-full my-6">
-  <img 
-    src="award.jpg" 
-    alt="Living Magazine Best Of Readers’ Choice 2025 Award"
-    class="w-full max-w-md rounded-lg border-2 border-gray-200 shadow-lg object-contain"
-    style="background: #f7fbe2;" 
-    loading="lazy">
-</div>
+      <!-- Responsive Award - Living Magazine Readers' Choice -->
+      <!-- Responsive Award - Living Magazine Readers' Choice (smaller) -->
+      <div class="flex justify-center w-full my-6">
+        <img src="award.jpg" alt="Living Magazine Best Of Readers’ Choice 2025 Award"
+          class="w-full max-w-md rounded-lg border-2 border-gray-200 shadow-lg object-contain"
+          style="background: #f7fbe2;" loading="lazy">
+      </div>
 
   </section>
 
@@ -671,12 +668,12 @@
                   Book Now
 
                 </button>
-                                <button id="book-now-btn"
+                <!-- <button id="book-now-btn"
                   class="btn-interactive w-full mt-10 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold text-lg shadow-lg"
                   onclick="window.location.href='https://foodsensescale.tech/login'">
-                  Customer portal 
+                  Customer portal
 
-                </button>
+                </button> -->
               </div>
 
               <!-- ---------- Right panel ---------------- -->
@@ -703,174 +700,208 @@
                     <p class="text-sm font-medium"> add-ons:</p>
                     <ul class="space-y-1">
 
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="10" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Blinds <small style="color:#6b7280;">(feather dusting)</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$10</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="80" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside Kitchen/Bathroom Cabinets <small style="color:#6b7280;">(move-out only)</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Oven Cleaning</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="20" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$20</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="30" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small style="color:#6b7280;">> 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$30</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="60" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small style="color:#6b7280;">> 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="60" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="80" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards <small style="color:#6b7280;">> 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="45" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside Refrigerator</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$45</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="15" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Vacuum Couch</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$15</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Clean Exterior Kitchen/Bathroom Cabinets</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
-  </label>
-</li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="10" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Blinds <small
+                              style="color:#6b7280;">(feather dusting)</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$10</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="80" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside Kitchen/Bathroom
+                            Cabinets <small style="color:#6b7280;">(move-out only)</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="40" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Oven Cleaning</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="20" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small
+                              style="color:#6b7280;">≤ 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$20</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="30" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small
+                              style="color:#6b7280;">> 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$30</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="40" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small
+                              style="color:#6b7280;">≤ 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="60" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small
+                              style="color:#6b7280;">> 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="60" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards
+                            <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="80" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards
+                            <small style="color:#6b7280;">> 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="45" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside
+                            Refrigerator</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$45</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="15" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Vacuum Couch</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$15</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="40" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Clean Exterior
+                            Kitchen/Bathroom Cabinets</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
+                        </label>
+                      </li>
 
                     </ul>
                   </div>
@@ -894,174 +925,208 @@
                   <div id="moveout-dropdown" class="hidden mt-2 pl-4 text-gray-700 space-y-2">
                     <p class="text-sm font-medium"> add-ons:</p>
                     <ul class="space-y-1">
-               <li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="10" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Blinds <small style="color:#6b7280;">(feather dusting)</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$10</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="80" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside Kitchen/Bathroom Cabinets <small style="color:#6b7280;">(move-out only)</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Oven Cleaning</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="20" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$20</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="30" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small style="color:#6b7280;">> 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$30</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="60" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small style="color:#6b7280;">> 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="60" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="80" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards <small style="color:#6b7280;">> 2500 sq ft</small></span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="45" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside Refrigerator</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$45</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="15" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Vacuum Couch</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$15</span>
-  </label>
-</li>
-<li class="flex items-center">
-  <label
-    style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
-    onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-    onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
-    onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
-    onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
-  >
-    <!-- Label content goes here -->
-    <input type="checkbox" class="addon-checkbox" style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;" data-price="40" />
-    <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Clean Exterior Kitchen/Bathroom Cabinets</span>
-    <span style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
-  </label>
-</li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="10" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Blinds <small
+                              style="color:#6b7280;">(feather dusting)</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$10</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="80" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside Kitchen/Bathroom
+                            Cabinets <small style="color:#6b7280;">(move-out only)</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="40" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Oven Cleaning</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="20" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small
+                              style="color:#6b7280;">≤ 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$20</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="30" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Baseboards <small
+                              style="color:#6b7280;">> 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$30</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="40" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small
+                              style="color:#6b7280;">≤ 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="60" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Dust Shutters <small
+                              style="color:#6b7280;">> 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="60" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards
+                            <small style="color:#6b7280;">≤ 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$60</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="80" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Hand-clean Baseboards
+                            <small style="color:#6b7280;">> 2500 sq ft</small></span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$80</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="45" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Inside
+                            Refrigerator</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$45</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="15" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Vacuum Couch</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$15</span>
+                        </label>
+                      </li>
+                      <li class="flex items-center">
+                        <label
+                          style="display:flex;align-items:center;width:100%;box-sizing:border-box;background:#fff;border:2px solid #e5e7eb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0.75em 1em;margin-bottom:0.75em;transition:box-shadow 0.2s,border-color 0.2s,background 0.2s,transform 0.1s;cursor:pointer;"
+                          onmouseover="this.style.borderColor='#3b82f6';this.style.background='#f0f6ff';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';"
+                          onmouseout="this.style.borderColor='#e5e7eb';this.style.background='#fff';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.04)';this.style.transform='scale(1)';"
+                          onmousedown="this.style.transform='scale(0.97)';this.style.boxShadow='0 8px 24px rgba(59,130,246,0.12)';"
+                          onmouseup="this.style.transform='scale(1)';this.style.boxShadow='0 4px 16px rgba(59,130,246,0.08)';">
+                          <!-- Label content goes here -->
+                          <input type="checkbox" class="addon-checkbox"
+                            style="accent-color:#3b82f6;width:1.2em;height:1.2em;margin-right:1em;transition:box-shadow 0.2s;cursor:pointer;"
+                            data-price="40" />
+                          <span style="font-size:1.08em;font-weight:500;color:#374151;flex:1;">Clean Exterior
+                            Kitchen/Bathroom Cabinets</span>
+                          <span
+                            style="background:#f3f4f6;border-radius:6px;padding:0.2em 0.7em;font-weight:600;margin-left:1em;color:#2563eb;font-size:1em;">$40</span>
+                        </label>
+                      </li>
                   </div>
                 </div>
 
@@ -1269,7 +1334,7 @@
 
     </section>
 
-      <!-- Pricing Calculator -->
+    <!-- Pricing Calculator -->
 
 
 
@@ -1290,468 +1355,566 @@
     <!-- 3-Step Process Section -->
     <!-- Service Area Section with Background Slideshow -->
     <section id="coverage" class="relative py-20 text-white">
-        <!-- Background Slideshow -->
-        <div class="absolute inset-0 z-0 overflow-hidden">
-            <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('bridgeland.jpeg')]">
-            </div>
-            <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('fairfield.jpg')]"></div>
-            <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('townelake.jpg')]"></div>
-            <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('colescrossing.jpg')]">
-            </div>
-
-            <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+      <!-- Background Slideshow -->
+      <div class="absolute inset-0 z-0 overflow-hidden">
+        <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('bridgeland.jpeg')]">
+        </div>
+        <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('fairfield.jpg')]"></div>
+        <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('townelake.jpg')]"></div>
+        <div class="slideshow-image absolute inset-0 bg-cover bg-center opacity-0 bg-[url('colescrossing.jpg')]">
         </div>
 
+        <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+      </div>
 
-        <!-- Foreground Content -->
-        <div class="relative z-10 container mx-auto px-4">
-            <!-- Left-aligned Header -->
-            <div class="mb-10 text-left">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]">
-                    Our Service Areas
-                </h2>
-                <p class="max-w-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
-                    We proudly serve Cypress, TX and surrounding areas!
-                </p>
-            </div>
 
-            <!-- Main content: Houston Coverage, ZIP, Map -->
-            <div class="max-w-sm space-y-6">
-                <!-- Houston Coverage Box -->
-                <div class="bg-white/60 text-gray-800 rounded-lg p-4 shadow-lg text-sm backdrop-blur-md">
-                    <h3 class="text-lg font-bold mb-2">Do we cover your area?</h3>
-                    <p class="mb-2">We cover major Cypress neighborhoods:</p>
-                    <div class="grid grid-cols-2 gap-1 mb-2 text-xs">
-                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Bridgeland
-                        </div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Fairfield
-                        </div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Towne Lake
-                        </div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Coles
-                            Crossing
-                        </div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Lakeland
-                            Village</div>
-                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Stone Gate
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ZIP Code Checker Box -->
-                <div class="bg-white/60 text-gray-800 rounded-lg shadow-lg p-4 text-sm backdrop-blur-md">
-                    <h3 class="text-lg font-bold mb-4 text-center">Check ZIP Availability</h3>
-                    <div class="space-y-2">
-                        <input id="zip-input" type="text" placeholder="Enter your ZIP/Postal Code"
-                            class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
-
-                        <button id="zip-check-btn"
-                            class="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm transition font-bold">
-                            Check
-                        </button>
-
-                        <p id="zip-result" class="text-center mt-2 text-sm font-bold"></p>
-
-                    </div>
-                    <p class="text-center mt-2 text-gray-600 text-xs font-bold">We’ll instantly check if we service your
-                        area.</p>
-                </div>
-
-            </div>
+      <!-- Foreground Content -->
+      <div class="relative z-10 container mx-auto px-4">
+        <!-- Left-aligned Header -->
+        <div class="mb-10 text-left">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]">
+            Our Service Areas
+          </h2>
+          <p class="max-w-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
+            We proudly serve Cypress, TX and surrounding areas!
+          </p>
         </div>
 
-        <script>
-            const servicedZips = ['77433', '77429', '77095', '77377', '77070', '77065'];
+        <!-- Main content: Houston Coverage, ZIP, Map -->
+        <div class="max-w-sm space-y-6">
+          <!-- Houston Coverage Box -->
+          <div class="bg-white/60 text-gray-800 rounded-lg p-4 shadow-lg text-sm backdrop-blur-md">
+            <h3 class="text-lg font-bold mb-2">Do we cover your area?</h3>
+            <p class="mb-2">We cover major Cypress neighborhoods:</p>
+            <div class="grid grid-cols-2 gap-1 mb-2 text-xs">
+              <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Bridgeland
+              </div>
+              <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Fairfield
+              </div>
+              <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Towne Lake
+              </div>
+              <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Coles
+                Crossing
+              </div>
+              <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Lakeland
+                Village</div>
+              <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Stone Gate
+              </div>
+            </div>
+          </div>
 
-            document.getElementById('zip-check-btn').addEventListener('click', () => {
-                const input = document.getElementById('zip-input').value.trim();
-                const result = document.getElementById('zip-result');
+          <!-- ZIP Code Checker Box -->
+          <div class="bg-white/60 text-gray-800 rounded-lg shadow-lg p-4 text-sm backdrop-blur-md">
+            <h3 class="text-lg font-bold mb-4 text-center">Check ZIP Availability</h3>
+            <div class="space-y-2">
+              <input id="zip-input" type="text" placeholder="Enter your ZIP/Postal Code"
+                class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
 
-                if (servicedZips.includes(input)) {
-                result.textContent = `Good news! We service your area!`;
-                result.className = "text-center mt-2 text-green-600 text-sm font-bold";
-                } else {
-                result.textContent = `Sorry, the location is outside of our service area.`;
-                result.className = "text-center mt-2 text-red-600 text-sm font-bold";
-                }
-            });
-        </script>
+              <button id="zip-check-btn"
+                class="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm transition font-bold">
+                Check
+              </button>
+
+              <p id="zip-result" class="text-center mt-2 text-sm font-bold"></p>
+
+            </div>
+            <p class="text-center mt-2 text-gray-600 text-xs font-bold">We’ll instantly check if we service your
+              area.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <script>
+        const servicedZips = ['77433', '77429', '77095', '77377', '77070', '77065'];
+
+        document.getElementById('zip-check-btn').addEventListener('click', () => {
+          const input = document.getElementById('zip-input').value.trim();
+          const result = document.getElementById('zip-result');
+
+          if (servicedZips.includes(input)) {
+            result.textContent = `Good news! We service your area!`;
+            result.className = "text-center mt-2 text-green-600 text-sm font-bold";
+          } else {
+            result.textContent = `Sorry, the location is outside of our service area.`;
+            result.className = "text-center mt-2 text-red-600 text-sm font-bold";
+          }
+        });
+      </script>
 
     </section>
 
 
     <!-- Testimonials -->
-<!-- =====================================================
+    <!-- =====================================================
   TESTIMONIALS — Continuous Auto‑Scroll (no text edited)
   ===================================================== -->
-<section id="testimonials" class="py-16 bg-gray-50" data-aos="fade-up">
-  <div class="container mx-auto px-4">
-    <!-- Heading -->
-    <div class="text-center mb-16">
-   <h2 class="text-3xl md:text-4xl font-bold mb-4" data-animate="fadeInUp">
-     What Our Customers Say
-   </h2>
-   <p class="text-gray-600 max-w-2xl mx-auto" data-animate="fadeInUp" data-delay="0.2s">
-     Don't just take our word for it – hear from our satisfied customers!
-   </p>
-    </div>
+    <section id="testimonials" class="py-16 bg-gray-50" data-aos="fade-up">
+      <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" data-animate="fadeInUp">
+            What Our Customers Say
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto" data-animate="fadeInUp" data-delay="0.2s">
+            Don't just take our word for it – hear from our satisfied customers!
+          </p>
+        </div>
 
-    <!-- === Auto‑scrolling wrapper === -->
-    <div class="relative overflow-hidden max-w-6xl mx-auto">
-   <!-- Track (two identical sets for seamless loop) -->
-   <div class="scrolling-testimonials flex">
-     <!-- ----------- ORIGINAL SET ----------- -->
-     <div class="testimonial-set flex">
-    <!-- Testimonial 1 -->
-    <div class="testimonial-card flex-shrink-0 w-[36rem] h-56 bg-white rounded-xl p-6 mx-3 flex items-center" data-animate="fadeInUp" data-delay="0.1s">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">K</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Kimberly Davis Greenwell</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "We love how clean our house is now that we have Maids of CyFair coming weekly.
-       They are friendly and bring all their own supplies. Highly recommend. You get
-       reminders a few days before your service and a text when they are on their way.
-       So happy we found a locally owned service to use and support."
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+        <!-- === Auto‑scrolling wrapper === -->
+        <div class="relative overflow-hidden max-w-6xl mx-auto">
+          <!-- Track (two identical sets for seamless loop) -->
+          <div class="scrolling-testimonials flex">
+            <!-- ----------- ORIGINAL SET ----------- -->
+            <div class="testimonial-set flex">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-card flex-shrink-0 w-[36rem] h-56 bg-white rounded-xl p-6 mx-3 flex items-center"
+                data-animate="fadeInUp" data-delay="0.1s">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-primary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    K</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Kimberly Davis Greenwell</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "We love how clean our house is now that we have Maids of CyFair coming weekly.
+                    They are friendly and bring all their own supplies. Highly recommend. You get
+                    reminders a few days before your service and a text when they are on their way.
+                    So happy we found a locally owned service to use and support."
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 2 -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center" data-animate="fadeInUp" data-delay="0.2s">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">T</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Takiyah Pierre</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "Wow. Can I just tell you how amazing this company is? I don’t think I’ve ever seen my house so clean and smell
-       so nice! My house was a hot mess and I wasn’t expecting any miracles but they went above and beyond! I am
-       completely blown away - they were incredibly through and paid great attention to detail. And the owners are
-       some of the kindest , nicest people I’ve ever encountered. I am so happy to have finally found my long-term
-       cleaners. Look no further for excellent work and top notch customer service. I highly recommend!! You won’t
-       regret it!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center"
+                data-animate="fadeInUp" data-delay="0.2s">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    T</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Takiyah Pierre</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "Wow. Can I just tell you how amazing this company is? I don’t think I’ve ever seen my house so
+                    clean and smell
+                    so nice! My house was a hot mess and I wasn’t expecting any miracles but they went above and beyond!
+                    I am
+                    completely blown away - they were incredibly through and paid great attention to detail. And the
+                    owners are
+                    some of the kindest , nicest people I’ve ever encountered. I am so happy to have finally found my
+                    long-term
+                    cleaners. Look no further for excellent work and top notch customer service. I highly recommend!!
+                    You won’t
+                    regret it!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 3 -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center" data-animate="fadeInUp" data-delay="0.3s">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">J</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Jennifer Marshall</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "All of the ladies at Maids of Cy-Fair work very hard and have good attention to detail. They have been cleaning
-       my home for the past 2 months and it has taken a huge load off of me. I truly appreciate the a la carte options-
-       I have them clean all my bathrooms and floors. I find those the hardest items for me to get to. I requested
-       they use my cleaning products and it was no issue. The owner is very responsive and cares about his clients
-       happiness. Their pricing is competitive… Highly recommend!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 3 -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center"
+                data-animate="fadeInUp" data-delay="0.3s">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-accent w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    J</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Jennifer Marshall</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "All of the ladies at Maids of Cy-Fair work very hard and have good attention to detail. They have
+                    been cleaning
+                    my home for the past 2 months and it has taken a huge load off of me. I truly appreciate the a la
+                    carte options-
+                    I have them clean all my bathrooms and floors. I find those the hardest items for me to get to. I
+                    requested
+                    they use my cleaning products and it was no issue. The owner is very responsive and cares about his
+                    clients
+                    happiness. Their pricing is competitive… Highly recommend!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 4 -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center" data-animate="fadeInUp" data-delay="0.3s">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">J</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Jaime Ferrell</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "Excellent job! Just had our first cleaning with Maids of Cy-Fair and we are very happy. Easy to book online.
-       Great communication of arrival time. Perfectly clean home in an efficient amount of time. I appreciate that
-       they have their own trash can liners and fold the toilet paper rolls into triangles. Even the kids said their rooms
-       were cleaned better than the other maid service. Looking forward to the next cleaning."
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 4 -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center"
+                data-animate="fadeInUp" data-delay="0.3s">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    J</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Jaime Ferrell</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "Excellent job! Just had our first cleaning with Maids of Cy-Fair and we are very happy. Easy to
+                    book online.
+                    Great communication of arrival time. Perfectly clean home in an efficient amount of time. I
+                    appreciate that
+                    they have their own trash can liners and fold the toilet paper rolls into triangles. Even the kids
+                    said their rooms
+                    were cleaned better than the other maid service. Looking forward to the next cleaning."
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 5 -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center" data-animate="fadeInUp" data-delay="0.3s">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">P</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Patrick Timmons</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "We sincerely appreciate the Maids of Cy-Fair team and all of their hard work! The clear description of what is
-       included in the services, and ability to set up a plan with frequency that fits any schedule or budget is fantastic.
-       The house looks amazing every time!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 5 -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center"
+                data-animate="fadeInUp" data-delay="0.3s">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    P</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Patrick Timmons</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "We sincerely appreciate the Maids of Cy-Fair team and all of their hard work! The clear description
+                    of what is
+                    included in the services, and ability to set up a plan with frequency that fits any schedule or
+                    budget is fantastic.
+                    The house looks amazing every time!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 6 -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center" data-animate="fadeInUp" data-delay="0.3s">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">B</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Bryce A Hogan</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "Highly recommend! We hired them for a deep clean after a full remodel of home we completed for a customer. Super fair pricing, easy communication and a sparkly clean house!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
-        </div>
-      </div>
-    </div>
-     </div>
+              <!-- Testimonial 6 -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center"
+                data-animate="fadeInUp" data-delay="0.3s">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    B</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Bryce A Hogan</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "Highly recommend! We hired them for a deep clean after a full remodel of home we completed for a
+                    customer. Super fair pricing, easy communication and a sparkly clean house!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-     <!-- -------- DUPLICATE SET (for infinite loop, aria‑hidden) -------- -->
-     <div class="testimonial-set flex" aria-hidden="true">
-    <!-- Testimonial 1 duplicate -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">K</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Kimberly Davis Greenwell</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "We love how clean our house is now that we have Maids of CyFair coming weekly.
-       They are friendly and bring all their own supplies. Highly recommend. You get
-       reminders a few days before your service and a text when they are on their way.
-       So happy we found a locally owned service to use and support."
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+            <!-- -------- DUPLICATE SET (for infinite loop, aria‑hidden) -------- -->
+            <div class="testimonial-set flex" aria-hidden="true">
+              <!-- Testimonial 1 duplicate -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-primary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    K</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Kimberly Davis Greenwell</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "We love how clean our house is now that we have Maids of CyFair coming weekly.
+                    They are friendly and bring all their own supplies. Highly recommend. You get
+                    reminders a few days before your service and a text when they are on their way.
+                    So happy we found a locally owned service to use and support."
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 2 duplicate -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">T</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Takiyah Pierre</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "Wow. Can I just tell you how amazing this company is? I don’t think I’ve ever seen my house so clean and smell
-       so nice! My house was a hot mess and I wasn’t expecting any miracles but they went above and beyond! I am
-       completely blown away - they were incredibly through and paid great attention to detail. And the owners are
-       some of the kindest , nicest people I’ve ever encountered. I am so happy to have finally found my long-term
-       cleaners. Look no further for excellent work and top notch customer service. I highly recommend!! You won’t
-       regret it!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 2 duplicate -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    T</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Takiyah Pierre</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "Wow. Can I just tell you how amazing this company is? I don’t think I’ve ever seen my house so
+                    clean and smell
+                    so nice! My house was a hot mess and I wasn’t expecting any miracles but they went above and beyond!
+                    I am
+                    completely blown away - they were incredibly through and paid great attention to detail. And the
+                    owners are
+                    some of the kindest , nicest people I’ve ever encountered. I am so happy to have finally found my
+                    long-term
+                    cleaners. Look no further for excellent work and top notch customer service. I highly recommend!!
+                    You won’t
+                    regret it!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 3 duplicate -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">J</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Jennifer Marshall</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "All of the ladies at Maids of Cy-Fair work very hard and have good attention to detail. They have been cleaning
-       my home for the past 2 months and it has taken a huge load off of me. I truly appreciate the a la carte options-
-       I have them clean all my bathrooms and floors. I find those the hardest items for me to get to. I requested
-       they use my cleaning products and it was no issue. The owner is very responsive and cares about his clients
-       happiness. Their pricing is competitive… Highly recommend!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 3 duplicate -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-accent w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    J</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Jennifer Marshall</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "All of the ladies at Maids of Cy-Fair work very hard and have good attention to detail. They have
+                    been cleaning
+                    my home for the past 2 months and it has taken a huge load off of me. I truly appreciate the a la
+                    carte options-
+                    I have them clean all my bathrooms and floors. I find those the hardest items for me to get to. I
+                    requested
+                    they use my cleaning products and it was no issue. The owner is very responsive and cares about his
+                    clients
+                    happiness. Their pricing is competitive… Highly recommend!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 4 duplicate -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">J</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Jaime Ferrell</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "Excellent job! Just had our first cleaning with Maids of Cy-Fair and we are very happy. Easy to book online.
-       Great communication of arrival time. Perfectly clean home in an efficient amount of time. I appreciate that
-       they have their own trash can liners and fold the toilet paper rolls into triangles. Even the kids said their rooms
-       were cleaned better than the other maid service. Looking forward to the next cleaning."
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 4 duplicate -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    J</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Jaime Ferrell</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "Excellent job! Just had our first cleaning with Maids of Cy-Fair and we are very happy. Easy to
+                    book online.
+                    Great communication of arrival time. Perfectly clean home in an efficient amount of time. I
+                    appreciate that
+                    they have their own trash can liners and fold the toilet paper rolls into triangles. Even the kids
+                    said their rooms
+                    were cleaned better than the other maid service. Looking forward to the next cleaning."
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 5 duplicate -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">P</div>
-      </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Patrick Timmons</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "We sincerely appreciate the Maids of Cy-Fair team and all of their hard work! The clear description of what is
-       included in the services, and ability to set up a plan with frequency that fits any schedule or budget is fantastic.
-       The house looks amazing every time!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
-        </div>
-      </div>
-    </div>
+              <!-- Testimonial 5 duplicate -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    P</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Patrick Timmons</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "We sincerely appreciate the Maids of Cy-Fair team and all of their hard work! The clear description
+                    of what is
+                    included in the services, and ability to set up a plan with frequency that fits any schedule or
+                    budget is fantastic.
+                    The house looks amazing every time!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Bridgeland</span>
+                  </div>
+                </div>
+              </div>
 
-    <!-- Testimonial 6 duplicate -->
-    <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
-      <div class="flex-shrink-0 mr-6">
-        <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">B</div>
+              <!-- Testimonial 6 duplicate -->
+              <div class="testimonial-card flex-shrink-0 w-[32rem] h-48 bg-white rounded-xl p-6 mx-3 flex items-center">
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                    B</div>
+                </div>
+                <div class="flex-1">
+                  <div class="flex items-center mb-2">
+                    <h4 class="font-bold mr-2">Bryce A Hogan</h4>
+                    <div class="flex text-yellow-400">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="text-gray-600 mb-2 text-sm line-clamp-3">
+                    "Highly recommend! We hired them for a deep clean after a full remodel of home we completed for a
+                    customer. Super fair pricing, easy communication and a sparkly clean house!"
+                  </p>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- /duplicate -->
+          </div> <!-- /track -->
+        </div> <!-- /overflow -->
       </div>
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-       <h4 class="font-bold mr-2">Bryce A Hogan</h4>
-       <div class="flex text-yellow-400">
-         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-       </div>
-        </div>
-        <p class="text-gray-600 mb-2 text-sm line-clamp-3">
-       "Highly recommend! We hired them for a deep clean after a full remodel of home we completed for a customer. Super fair pricing, easy communication and a sparkly clean house!"
-        </p>
-        <div class="flex items-center text-xs text-gray-500">
-       <i class="fas fa-map-marker-alt mr-2"></i><span>Fairfield</span>
-        </div>
-      </div>
-    </div>
-     </div> <!-- /duplicate -->
-   </div> <!-- /track -->
-    </div> <!-- /overflow -->
-  </div>
-  <!-- === Styles for continuous scroll (same pattern as “Why Choose Us”) === -->
-  <style>
-    @keyframes testimonialScroll {
-   0%   { transform: translateX(0); }
-   100% { transform: translateX(-50%); }
-    }
-    .scrolling-testimonials {
-   display: flex;
-   width: max-content;
-   animation: testimonialScroll 30s linear infinite;
-    }
-    .scrolling-testimonials:hover {
-   animation-play-state: paused;
-    }
-    .testimonial-set { display: flex; }
-    .testimonial-card {
-   flex-shrink: 0;
-   width: 32rem !important;
-   height: 12rem !important;
-   margin: 0 0.75rem;
-   display: flex;
-   align-items: center;
-   box-sizing: border-box;
-   /* Optional: for text truncation */
-   overflow: hidden;
-    }
-    /* Optional: Clamp testimonial text to 3 lines */
-    .testimonial-card .line-clamp-3 {
-   display: -webkit-box;
-   -webkit-line-clamp: 3;
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-    }
-  </style>
-</section>
+      <!-- === Styles for continuous scroll (same pattern as “Why Choose Us”) === -->
+      <style>
+        @keyframes testimonialScroll {
+          0% {
+            transform: translateX(0);
+          }
 
-  <!-- === Styles for continuous scroll (same pattern as “Why Choose Us”) === -->
-  <style>
-    @keyframes testimonialScroll {
-      0%   { transform: translateX(-50%); }
-      100% { transform: translateX(0); }
-    }
-    .scrolling-testimonials {
-      display: flex;
-      width: max-content;
-      animation: testimonialScroll 30s linear infinite;
-    }
-    .scrolling-testimonials:hover {
-      animation-play-state: paused;   /* Pause on hover */
-    }
-    .testimonial-set { display: flex; }
-    .testimonial-card {
-      flex-shrink: 0;
-      width: 20rem;          /* w‑80 */
-      margin: 0 0.75rem;     /* mx‑3 */
-    }
-  </style>
-</section>
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .scrolling-testimonials {
+          display: flex;
+          width: max-content;
+          animation: testimonialScroll 30s linear infinite;
+        }
+
+        .scrolling-testimonials:hover {
+          animation-play-state: paused;
+        }
+
+        .testimonial-set {
+          display: flex;
+        }
+
+        .testimonial-card {
+          flex-shrink: 0;
+          width: 32rem !important;
+          height: 12rem !important;
+          margin: 0 0.75rem;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          /* Optional: for text truncation */
+          overflow: hidden;
+        }
+
+        /* Optional: Clamp testimonial text to 3 lines */
+        .testimonial-card .line-clamp-3 {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      </style>
+    </section>
+
+    <!-- === Styles for continuous scroll (same pattern as “Why Choose Us”) === -->
+    <style>
+      @keyframes testimonialScroll {
+        0% {
+          transform: translateX(-50%);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .scrolling-testimonials {
+        display: flex;
+        width: max-content;
+        animation: testimonialScroll 30s linear infinite;
+      }
+
+      .scrolling-testimonials:hover {
+        animation-play-state: paused;
+        /* Pause on hover */
+      }
+
+      .testimonial-set {
+        display: flex;
+      }
+
+      .testimonial-card {
+        flex-shrink: 0;
+        width: 20rem;
+        /* w‑80 */
+        margin: 0 0.75rem;
+        /* mx‑3 */
+      }
+    </style>
+    </section>
 
 
     <!-- Why Choose Us Section -->
@@ -1759,365 +1922,377 @@
     <section id="difference-section" class="py-16 bg-white" data-aos="fade-up" style="
     padding-bottom: 0px;
 ">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">THE BIG DIFFERENCE</h2>
-                    <p class="text-lg text-gray-600 mb-8">
-                        Industry's pioneering A' La Carte maid service program, where YOU have the power to tailor your
-                        cleaning services precisely to your preferences and budget.
-                    </p>
-                    <div class="space-y-4">
-                        <p class="text-gray-700">
-                            Book now and customize your cleaning on the booking form and get an instant quote as you
-                            build!
-                        </p>
-                        <button
-                            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md"
-                            onclick="window.location.href='https://foodsensescale.tech/guest-booking'">
-                            Book Now
-                        </button>
-                                                <button
-                            class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md"
-                            onclick="window.location.href='https://foodsensescale.tech/login'">
-                            Customer Portal
-                        </button>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">THE BIG DIFFERENCE</h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Industry's pioneering A' La Carte maid service program, where YOU have the power to tailor your
+              cleaning services precisely to your preferences and budget.
+            </p>
+            <div class="space-y-4">
+              <p class="text-gray-700">
+                Book now and customize your cleaning on the booking form and get an instant quote as you
+                build!
+              </p>
+              <button
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md"
+                onclick="window.location.href='https://foodsensescale.tech/guest-booking'">
+                Book Now
+              </button>
+              <!-- <button
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md"
+                onclick="window.location.href='https://foodsensescale.tech/login'">
+                Customer Portal
+              </button> -->
 
 
-                    </div>
-                </div>
-                <div class="md:w-1/2">
-                    <div class="relative rounded-xl overflow-hidden shadow-lg">
-                        <video class="w-full" muted autoplay loop playsinline controls id="differenceVideo">
-                            <source src="ultimate.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="absolute inset-0 flex items-center justify-center" id="videoPlayButton">
-                            <button
-                                class="bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-16 h-16 flex items-center justify-center transition">
-                                <i class="fas fa-play text-primary text-xl"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="relative rounded-xl overflow-hidden shadow-lg">
+              <video class="w-full" muted autoplay loop playsinline controls id="differenceVideo">
+                <source src="ultimate.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="absolute inset-0 flex items-center justify-center" id="videoPlayButton">
+                <button
+                  class="bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-16 h-16 flex items-center justify-center transition">
+                  <i class="fas fa-play text-primary text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- why chooose us method -->
-        <section class="mt-16 py-16 bg-[#F1F5F9]" data-aos="fade-up">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-animate="fadeInUp">Why Choose Us Over
-                    Others?</h2>
-                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-                    Discover what makes our cleaning service stand out from the competition.
-                </p>
+      <!-- why chooose us method -->
+      <section class="mt-16 py-16 bg-[#F1F5F9]" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-animate="fadeInUp">Why Choose Us Over
+            Others?</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            Discover what makes our cleaning service stand out from the competition.
+          </p>
 
-                <!-- Auto-scrolling Feature Boxes Container -->
-                <div class="relative overflow-hidden">
-                    <div class="scrolling-features flex">
-                        <!-- Original feature boxes -->
-                        <div class="feature-set flex">
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
-                                <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
-                                    included.
-                                </p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
-                                <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay updated
-                                    every
-                                    step of the way.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-soap text-yellow-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
-                                <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
-                                        fresh
-                                        mop
-                                        heads</strong> per home — no sharing between rooms.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
-                                <p class="text-gray-600">We are fully insured & our team is background-checked — your
-                                    home
-                                    is in
-                                    safe hands.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-lock text-amber-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
-                                <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
-                                    Just
-                                    clean.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Duplicate for seamless looping -->
-                        <div class="feature-set flex" aria-hidden="true">
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
-                                <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
-                                    included.
-                                </p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
-                                <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay updated
-                                    every
-                                    step of the way.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-soap text-yellow-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
-                                <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
-                                        fresh
-                                        mop
-                                        heads</strong> per home — no sharing between rooms.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
-                                <p class="text-gray-600">We are fully insured & our team is background-checked — your
-                                    home
-                                    is in
-                                    safe hands.</p>
-                            </div>
-
-                            <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
-                                <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                                    <i class="fas fa-lock text-amber-500 text-2xl"></i>
-                                </div>
-                                <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
-                                <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
-                                    Just
-                                    clean.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+          <!-- Auto-scrolling Feature Boxes Container -->
+          <div class="relative overflow-hidden">
+            <div class="scrolling-features flex">
+              <!-- Original feature boxes -->
+              <div class="feature-set flex">
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
+                  <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
+                    included.
+                  </p>
                 </div>
 
-                <!-- Bonus Highlight -->
-                <div class="mt-12 text-center bg-white max-w-4xl mx-auto p-6 rounded-xl shadow-md">
-                    <p class="text-xl font-semibold mb-2">
-                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
-                        <span class="italic">"Wait — other companies use the <strong>same mop</strong> for the bathroom
-                            and
-                            kitchen?!"</span>
-                    </p>
-                    <p class="text-gray-700 mt-3">Yeah... we don't.</p>
-                    <p class="text-gray-600 mt-2">We believe in <strong>clean tools for a clean home</strong>. That's
-                        why
-                        every home gets:</p>
-                    <ul class="list-disc list-inside mt-4 text-gray-700 text-left max-w-md mx-auto">
-                        <li>✅ 24 color coded microfiber towels</li>
-                        <li>✅ 2 fresh mop heads separate for bathroom & living areas</li>
-                    </ul>
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
+                  <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay updated
+                    every
+                    step of the way.</p>
                 </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-soap text-yellow-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
+                  <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
+                      fresh
+                      mop
+                      heads</strong> per home — no sharing between rooms.</p>
+                </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
+                  <p class="text-gray-600">We are fully insured & our team is background-checked — your
+                    home
+                    is in
+                    safe hands.</p>
+                </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-lock text-amber-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
+                  <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
+                    Just
+                    clean.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Duplicate for seamless looping -->
+              <div class="feature-set flex" aria-hidden="true">
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">AFFORDABLE</h3>
+                  <p class="text-gray-600">Flat-rate pricing. No hidden fees. Fully itemized — tax
+                    included.
+                  </p>
+                </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-calendar-check text-green-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">RELIABLE ALERTS</h3>
+                  <p class="text-gray-600">Get 3-day, 1-day, and 1-hour reminders via text. Stay updated
+                    every
+                    step of the way.</p>
+                </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-soap text-yellow-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">CLEAN TOOLS</h3>
+                  <p class="text-gray-600">We bring <strong>24 color-coded towels</strong> & <strong>2
+                      fresh
+                      mop
+                      heads</strong> per home — no sharing between rooms.</p>
+                </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-purple-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">FULLY INSURED</h3>
+                  <p class="text-gray-600">We are fully insured & our team is background-checked — your
+                    home
+                    is in
+                    safe hands.</p>
+                </div>
+
+                <div class="feature-box flex-shrink-0 w-64 bg-white rounded-xl shadow-md p-6 mx-3">
+                  <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-lock text-amber-500 text-2xl"></i>
+                  </div>
+                  <h3 class="font-bold text-xl mb-2">CARD-SECURE BOOKING</h3>
+                  <p class="text-gray-600">100% web-based, secure card system. No surprises. No risks.
+                    Just
+                    clean.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <style>
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
+          <!-- Bonus Highlight -->
+          <div class="mt-12 text-center bg-white max-w-4xl mx-auto p-6 rounded-xl shadow-md">
+            <p class="text-xl font-semibold mb-2">
+              <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+              <span class="italic">"Wait — other companies use the <strong>same mop</strong> for the bathroom
+                and
+                kitchen?!"</span>
+            </p>
+            <p class="text-gray-700 mt-3">Yeah... we don't.</p>
+            <p class="text-gray-600 mt-2">We believe in <strong>clean tools for a clean home</strong>. That's
+              why
+              every home gets:</p>
+            <ul class="list-disc list-inside mt-4 text-gray-700 text-left max-w-md mx-auto">
+              <li>✅ 24 color coded microfiber towels</li>
+              <li>✅ 2 fresh mop heads separate for bathroom & living areas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-                100% {
-                    transform: translateX(-50%);
-                }
+      <style>
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .scrolling-features {
+          display: flex;
+          width: max-content;
+          animation: scroll 20s linear infinite;
+        }
+
+        .scrolling-features:hover {
+          animation-play-state: paused;
+        }
+
+        .feature-set {
+          display: flex;
+        }
+
+        .feature-box {
+          flex-shrink: 0;
+          width: 16rem;
+          /* w-64 */
+          margin: 0 0.75rem;
+          /* mx-3 */
+        }
+      </style>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const video = document.getElementById('differenceVideo');
+          const playButton = document.getElementById('videoPlayButton');
+          const section = document.getElementById('difference-section');
+
+          // Initial setup
+          video.muted = true;
+          video.loop = true;
+          video.playsInline = true;
+
+          function tryPlayVideo() {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise.then(() => {
+                playButton.style.display = 'none';
+              }).catch((error) => {
+                // Show button if autoplay fails
+                playButton.style.display = 'flex';
+                console.log("Autoplay blocked:", error);
+              });
             }
+          }
 
-            .scrolling-features {
-                display: flex;
-                width: max-content;
-                animation: scroll 20s linear infinite;
-            }
-
-            .scrolling-features:hover {
-                animation-play-state: paused;
-            }
-
-            .feature-set {
-                display: flex;
-            }
-
-            .feature-box {
-                flex-shrink: 0;
-                width: 16rem;
-                /* w-64 */
-                margin: 0 0.75rem;
-                /* mx-3 */
-            }
-        </style>
-
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const video = document.getElementById('differenceVideo');
-                const playButton = document.getElementById('videoPlayButton');
-                const section = document.getElementById('difference-section');
-
-                // Initial setup
-                video.muted = true;
-                video.loop = true;
-                video.playsInline = true;
-
-                function tryPlayVideo() {
-                    const playPromise = video.play();
-                    if (playPromise !== undefined) {
-                        playPromise.then(() => {
-                            playButton.style.display = 'none';
-                        }).catch((error) => {
-                            // Show button if autoplay fails
-                            playButton.style.display = 'flex';
-                            console.log("Autoplay blocked:", error);
-                        });
-                    }
-                }
-
-                // Intersection Observer to control video playback
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            tryPlayVideo();
-                        } else {
-                            video.pause();
-                        }
-                    });
-                }, {
-                    threshold: 0.5 // 50% of section must be visible
-                });
-
-                observer.observe(section);
-
-                // Manual play button behavior
-                playButton.addEventListener('click', function () {
-                    video.muted = false;
-                    video.play().then(() => {
-                        playButton.style.display = 'none';
-                    }).catch(error => {
-                        console.log('Manual play failed:', error);
-                    });
-                });
-
-                // Unmute on first user interaction anywhere on page
-                document.addEventListener('click', function enableSound() {
-                    video.muted = false;
-                    document.removeEventListener('click', enableSound);
-                }, { once: true });
-
-                // Manage play/pause UI
-                video.addEventListener('play', function () {
-                    playButton.style.display = 'none';
-                });
-
-                video.addEventListener('pause', function () {
-                    playButton.style.display = 'flex';
-                });
+          // Intersection Observer to control video playback
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                tryPlayVideo();
+              } else {
+                video.pause();
+              }
             });
-        </script>
+          }, {
+            threshold: 0.5 // 50% of section must be visible
+          });
+
+          observer.observe(section);
+
+          // Manual play button behavior
+          playButton.addEventListener('click', function () {
+            video.muted = false;
+            video.play().then(() => {
+              playButton.style.display = 'none';
+            }).catch(error => {
+              console.log('Manual play failed:', error);
+            });
+          });
+
+          // Unmute on first user interaction anywhere on page
+          document.addEventListener('click', function enableSound() {
+            video.muted = false;
+            document.removeEventListener('click', enableSound);
+          }, { once: true });
+
+          // Manage play/pause UI
+          video.addEventListener('play', function () {
+            playButton.style.display = 'none';
+          });
+
+          video.addEventListener('pause', function () {
+            playButton.style.display = 'flex';
+          });
+        });
+      </script>
 
     </section>
 
 
     <!-- Footer -->
     <footer id="footer" class="bg-[#000000] text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <a href="/" title="Go to Home">
-                            <img src="white.png" alt="Maids of Cy-Fair Logo" class="h-28">
-                        </a>
-                    </div>
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <a href="/" title="Go to Home">
+                <img src="white.png" alt="Maids of Cy-Fair Logo" class="h-28">
+              </a>
+            </div>
 
-                    <p class="text-gray-300 mb-4">
-                        Fully insured cleaners · Background checked · English speaking ·
-                        <br>Eco-friendly products · Satisfaction guaranteed
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-white"> <i class="fab fa-facebook-f">    Facebook</i></a>
-                        <!-- <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-[#d4af37]">Facebook <i ></i></a> -->
-                        <!-- <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-instagram"></i></a>
+            <p class="text-gray-300 mb-4">
+              Fully insured cleaners · Background checked · English speaking ·
+              <br>Eco-friendly products · Satisfaction guaranteed
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/"
+                class="text-gray-300 hover:text-white"> <i class="fab fa-facebook-f"> Facebook</i></a>
+              <!-- <a href="https://www.facebook.com/people/Maids-of-Cy-Fair/61551869414470/" class="text-gray-300 hover:text-[#d4af37]">Facebook <i ></i></a> -->
+              <!-- <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="text-gray-300 hover:text-[#d4af37]"><i class="fab fa-twitter"></i></a> -->
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#hero" class="text-gray-300 hover:text-white">Home</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
-                        <li><a href="#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
-                        <li><a href="#coverage" class="text-gray-300 hover:text-white">Coverage Area</a></li>
-                        <li><a href="https://foodsensescale.tech/guest-booking" class="text-gray-300 hover:text-white">Book Online</a></li>
-                    </ul>
-                </div>
-
-
-
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-white mt-1 mr-3"></i>
-                            <span class="text-gray-300">8102 Fry Road, Ste A #1021, Cypress, TX 77433</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone text-white mr-3"></i>
-                            <span class="text-gray-300">(832) 727-0277</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope text-white mr-3"></i>
-                            <span class="text-gray-300">info@maidsofcyfair.com</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-clock text-white mr-3"></i>
-                            <span class="text-gray-300">Mon-Fri: 8am - 6pm</span>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-6">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-400 text-sm">
-                    <img src="logo.png" alt="Bottom Logo" class="h-10">
-                    <p>©2025 MaidsofCyfair. All rights reserved.</p>
-                </div>
-            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#hero" class="text-gray-300 hover:text-white">Home</a></li>
+              <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+              <li><a href="#pricing" class="text-gray-300 hover:text-white">Pricing</a></li>
+              <li><a href="#coverage" class="text-gray-300 hover:text-white">Coverage Area</a></li>
+              <li><a href="https://foodsensescale.tech/guest-booking" class="text-gray-300 hover:text-white">Book
+                  Online</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Legal</h4>
+            <ul class="space-y-2">
+              <li><a href="./privacy-policy.html" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+              <li><a href="./refund-policy.html" class="text-gray-300 hover:text-white">Refund Policy</a></li>
+              <li><a href="./terms-and-conditions.html" class="text-gray-300 hover:text-white">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-white mt-1 mr-3"></i>
+                <span class="text-gray-300">8102 Fry Road, Ste A #1021, Cypress, TX 77433</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone text-white mr-3"></i>
+                <span class="text-gray-300">(832) 727-0277</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-white mr-3"></i>
+                <span class="text-gray-300">info@maidsofcyfair.com</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-clock text-white mr-3"></i>
+                <span class="text-gray-300">Mon-Fri: 8am - 6pm</span>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="border-t border-gray-700 mt-8 pt-6">
+          <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-400 text-sm">
+            <img src="logo.png" alt="Bottom Logo" class="h-10">
+            <p>©2025 MaidsofCyfair. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Floating Chat Button -->
@@ -2128,112 +2303,112 @@
     </button>
 </div>-->
     <script>
-        // Toggle dropdown + set price
-        function selectService(service, basePrice) {
-            const area = parseInt(document.getElementById('area-slider').value);
-            const priceMultiplier = area / 1500; // base is 1500 sq ft
-            const price = Math.round(basePrice * priceMultiplier);
+      // Toggle dropdown + set price
+      function selectService(service, basePrice) {
+        const area = parseInt(document.getElementById('area-slider').value);
+        const priceMultiplier = area / 1500; // base is 1500 sq ft
+        const price = Math.round(basePrice * priceMultiplier);
 
-            // Update the price
-            document.getElementById(`${service}-price`).innerText = `$${price}`;
+        // Update the price
+        document.getElementById(`${service}-price`).innerText = `$${price}`;
 
-            // Toggle dropdown info
-            const infoEl = document.getElementById(`${service}-info`);
-            if (infoEl) {
-                infoEl.classList.toggle('hidden');
-            }
+        // Toggle dropdown info
+        const infoEl = document.getElementById(`${service}-info`);
+        if (infoEl) {
+          infoEl.classList.toggle('hidden');
         }
+      }
     </script>
     <script>
-        const stickyLogo = document.getElementById('sticky-logo');
+      const stickyLogo = document.getElementById('sticky-logo');
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > window.innerHeight * 0.7) {
-                stickyLogo.classList.add('show');
-            } else {
-                stickyLogo.classList.remove('show');
-            }
-        });
-    </script>
-    <script>
-        // Simple scroll animation function
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('[data-aos]');
-
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150; // px
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('aos-animate');
-                } else {
-                    element.classList.remove('aos-animate');
-                }
-            });
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight * 0.7) {
+          stickyLogo.classList.add('show');
+        } else {
+          stickyLogo.classList.remove('show');
         }
+      });
+    </script>
+    <script>
+      // Simple scroll animation function
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('[data-aos]');
 
-        // Initialize on load
-        document.addEventListener('DOMContentLoaded', () => {
-            // Run once on load
-            animateOnScroll();
+        elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150; // px
 
-            // Then run on scroll
-            window.addEventListener('scroll', animateOnScroll);
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add('aos-animate');
+          } else {
+            element.classList.remove('aos-animate');
+          }
         });
+      }
+
+      // Initialize on load
+      document.addEventListener('DOMContentLoaded', () => {
+        // Run once on load
+        animateOnScroll();
+
+        // Then run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+      });
     </script>
 
     <script>
-        // Scroll animation handler
-        function handleScrollAnimations() {
-            const elements = document.querySelectorAll('[data-animate]');
-            const windowHeight = window.innerHeight;
-            const windowTop = window.scrollY;
-            const windowBottom = windowTop + windowHeight;
+      // Scroll animation handler
+      function handleScrollAnimations() {
+        const elements = document.querySelectorAll('[data-animate]');
+        const windowHeight = window.innerHeight;
+        const windowTop = window.scrollY;
+        const windowBottom = windowTop + windowHeight;
 
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top + windowTop;
-                const elementBottom = elementTop + element.offsetHeight;
+        elements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top + windowTop;
+          const elementBottom = elementTop + element.offsetHeight;
 
-                // Check if element is in viewport
-                if (elementBottom >= windowTop && elementTop <= windowBottom) {
-                    const animationType = element.getAttribute('data-animate');
-                    const delay = element.getAttribute('data-delay') || '0';
+          // Check if element is in viewport
+          if (elementBottom >= windowTop && elementTop <= windowBottom) {
+            const animationType = element.getAttribute('data-animate');
+            const delay = element.getAttribute('data-delay') || '0';
 
-                    element.style.animationDelay = delay;
-                    element.classList.add(`animate-${animationType}`);
-                    element.style.opacity = '1'; // Make visible before animation starts
+            element.style.animationDelay = delay;
+            element.classList.add(`animate-${animationType}`);
+            element.style.opacity = '1'; // Make visible before animation starts
 
-                    // Remove attribute to prevent re-animation
-                    element.removeAttribute('data-animate');
-                }
-            });
+            // Remove attribute to prevent re-animation
+            element.removeAttribute('data-animate');
+          }
+        });
+      }
+
+      // Initialize on load and scroll
+      document.addEventListener('DOMContentLoaded', handleScrollAnimations);
+      window.addEventListener('scroll', handleScrollAnimations);
+    </script>
+    <script>
+      // Auto-scrolling animation for Why Choose Us section
+      document.addEventListener('DOMContentLoaded', function () {
+        const scrollingFeatures = document.querySelector('.scrolling-features');
+        if (scrollingFeatures) {
+          // Clone the first feature set and append to create seamless loop
+          const featureSet = document.querySelector('.feature-set');
+          const clone = featureSet.cloneNode(true);
+          scrollingFeatures.appendChild(clone);
+
+          // Pause animation on hover
+          scrollingFeatures.addEventListener('mouseenter', () => {
+            scrollingFeatures.style.animationPlayState = 'paused';
+          });
+          scrollingFeatures.addEventListener('mouseleave', () => {
+            scrollingFeatures.style.animationPlayState = 'running';
+          });
         }
-
-        // Initialize on load and scroll
-        document.addEventListener('DOMContentLoaded', handleScrollAnimations);
-        window.addEventListener('scroll', handleScrollAnimations);
+      });
     </script>
-    <script>
-        // Auto-scrolling animation for Why Choose Us section
-        document.addEventListener('DOMContentLoaded', function () {
-            const scrollingFeatures = document.querySelector('.scrolling-features');
-            if (scrollingFeatures) {
-                // Clone the first feature set and append to create seamless loop
-                const featureSet = document.querySelector('.feature-set');
-                const clone = featureSet.cloneNode(true);
-                scrollingFeatures.appendChild(clone);
+    <script>(function (w, d) { w.CollectId = "688a48ccc3650e35db502adc"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+  </body>
 
-                // Pause animation on hover
-                scrollingFeatures.addEventListener('mouseenter', () => {
-                    scrollingFeatures.style.animationPlayState = 'paused';
-                });
-                scrollingFeatures.addEventListener('mouseleave', () => {
-                    scrollingFeatures.style.animationPlayState = 'running';
-                });
-            }
-        });
-    </script>
-<script>(function(w, d) { w.CollectId = "688a48ccc3650e35db502adc"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-</body>
-
-</html>
+  </html>
